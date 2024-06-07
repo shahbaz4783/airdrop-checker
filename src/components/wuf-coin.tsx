@@ -78,7 +78,7 @@ const EligibilityCheck = () => {
 				<label htmlFor='wallet'>Enter Your wax wallet address</label>
 				<input
 					id='wallet'
-					className='bg-black border p-3'
+					className='bg-black border p-3 text-white'
 					onChange={(e) => setInputValue(e.target.value)}
 					value={inputValue}
 				/>
@@ -96,7 +96,7 @@ const EligibilityCheck = () => {
 					{loading ? (
 						<h1>Loading...</h1>
 					) : fetchData?.amount ? (
-						<div className='bg-slate-800 p-4 rounded-md space-y-3'>
+						<div className='bg-slate-800 text-white p-4 rounded-md space-y-3'>
 							You have got{' '}
 							<span className='bolder text-xl text-green-400'>
 								{formatAmount(fetchData.amount)}
